@@ -1,0 +1,26 @@
+
+<div class="card" style="width: 300px;height: 330px;margin-left: 40%; margin-top: 30px;" >
+  <div class="container" >
+    <form *ngIf="formAddNote" [formGroup]="formAddNote" (ngSubmit)="submit()">
+
+      <input type="text" class="form-control" formControlName="tag" placeholder="tag"><br><br>
+
+      <input type="text" class="form-control" formControlName="url" placeholder="url"><br><br>
+
+      <input type="text" class="form-control" formControlName="descriptions" placeholder="descriptions"><br><br>
+
+      <button type="submit" class="btn btn-primary">add</button>
+      <button routerLink="" class="btn btn-primary">back</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
